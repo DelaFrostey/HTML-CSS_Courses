@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forms and Input</title>
+</head>
+<body>
+  <form action="proccess.py"> <!-- акшон преобразует нашу форму в файл типа...-->
+
+    <!-- Text-->
+    <div> <!--division — раздел, секция) является универсальным блочным элементом и предназначен для группирования элементов-->
+      <label for="name">Name</label><br>
+      <input type="text " id="name" name="name" value="Igor Chizhmak">
+    </div>
+    <br>
+     <!-- Email-->
+    <div>
+      <label for="email">Email</label><br>
+      <input type="email" id="email" name="email" placeholder="please enter email">
+    </div>
+    <br>
+     <!-- Textarea-->
+    <div>
+      <label for="message">Message</label><br>
+      <textarea name="message" id="message" cols="50" rows="5"></textarea>
+    </div>
+    <br>
+     <!-- Select male-->
+    <div>
+      <label for="sex">Male or Female</label><br>
+      <select name="sex" id="sex">
+        <option value="male" >Male</option>
+        <option value="female">Female</option>
+        <option value="other"> Other</option>
+      </select>
+    </div>
+    <br>
+     <!-- Number-->
+    <div>
+      <label for="age">Age</label><br>
+      <input type="number" name="age" id="age">
+    </div>
+    <br>
+     <!-- Date-->
+    <div>
+      <label for="birthdate">Birthdate</label><br>
+      <input type="date" name="birthdate" id="birthdate">
+    </div>
+     <!-- Radio-->
+    <div>
+      <label for="membership">Membership</label><br>
+      <input type="radio" name="membership" value="1" id="membership"> жив
+      <input type="radio" name="membership" value="2" id="membership"> цел
+      <input type="radio" name="membership" value="3" id="membership" checked> орёл
+    </div>
+     <!-- Cheeckbox-->
+    <div>
+      <label for="membership">Я Люблю..</label>
+      <input type="checkbox" name="likes" value="Машины" id="likes" > Машины
+      <input type="checkbox" name="likes" value="Байки" id="likes" > Байки
+      <input type="checkbox" name="likes" value="Еду" id="likes" > Еду
+    </div>
+     <!-- Input submit-->
+    <div>
+      <input type="submit" value="Submit">
+    </div>
+  <br>
+    <!-- используем кнопки submit-->
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+  </form>
+</body>
+</html>

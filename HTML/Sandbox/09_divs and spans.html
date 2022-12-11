@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Div and span, id, classes</title>
+  <style>
+    .card {
+      border: 1px solid #c12;
+      background: #f4f4f4;
+      padding: 30px;
+      margin-bottom: 10px;
+
+    }
+    .enhance {
+      color: yellow;
+      background-color: black;
+    }
+  </style>
+</head>
+<body>
+  <div id="main-header" class="card">
+    <h1>My Website</h1>
+    <p>A site about club</p>
+  </div>
+  <ul id="main-nav">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+  <div id="about" class="card">
+    <h3>About</h3> <!-- где спан строковый контейнер для фраз, а див блочный универсальный-->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <span class="enhance"> ratione excepturi accusantium at, doloremque, perferendis, eum nulla quos perspiciatis quibusdam delectus! Architecto culpa, totam eaque iste, harum nesciunt dicta enim</span> molestiae reprehenderit explicabo provident quis facere dolorem laboriosam veniam quia laborum sapiente ipsa! Sapiente accusantium explicabo vero eligendi animi dolores!</p>
+  </div>
+
+  <div id="contact" class="card">
+    <h3>Contact Me</h3>
+    <ul>
+      <li>Adress: International street 32, Komi, Syktyvkar</li>
+      <li>Phone: 8(904)2393879</li>
+      <li>Email: Drop222@gmail.com</li>
+    </ul>
+  </div>
+
+  <div id="footer">
+    <p>Copyright 2023</p>
+  </div>
+</body>
+</html>
