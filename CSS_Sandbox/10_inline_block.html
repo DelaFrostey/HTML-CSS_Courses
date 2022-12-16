@@ -6,10 +6,54 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Inline & Block Styling</title>
   <style>
-   
+  /* CSS Reset */
+    * {
+      box-sizing:border-box;
+    }
+
+    li {
+      display: inline;
+    }
+    li a {
+      padding-right: 10px;
+    }
+    img {
+      display: block;
+      margin: auto; /* Margin auto мы можем выставить только у block уровня, в inline это НЕ работает*/
+    }
+
+    .box {
+      width: 32.8%; /* Мы не можем использовать width в inline уровне, только в block*/
+      display: inline-block;
+      background: #f4f4f4;
+      padding: 20px;
+      margin-bottom: 15px;
+    }
   </style>
 </head>
 <body>
-  
+  <ul>
+    <li><a href="#">Techonology</a></li>
+    <li><a href="#">Business</a></li>
+    <li><a href="#">Fashion</a></li>
+  </ul>
+  <br><br>
+
+  <img src="./img/leaf.png" alt="My Image">
+
+  <br><br>
+
+  <div class="box">
+    <h3> Heading</h3>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat cupiditate amet ipsa quam dolorem aspernatur nostrum ad repellendus excepturi. Officia, ipsum? Rerum, corrupti! Necessitatibus molestiae ea consequuntur ipsa quae magni?</p>
+  </div>
+  <div class="box">
+    <h3> Heading</h3>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat cupiditate amet ipsa quam dolorem aspernatur nostrum ad repellendus excepturi. Officia, ipsum? Rerum, corrupti! Necessitatibus molestiae ea consequuntur ipsa quae magni?</p>
+  </div>
+  <div class="box">
+    <h3> Heading</h3>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat cupiditate amet ipsa quam dolorem aspernatur nostrum ad repellendus excepturi. Officia, ipsum? Rerum, corrupti! Necessitatibus molestiae ea consequuntur ipsa quae magni?</p>
+  </div>
 </body>
 </html>
