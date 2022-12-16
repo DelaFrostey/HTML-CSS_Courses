@@ -6,10 +6,85 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>CSS Positioning</title>
   <style>
-   
+    body {
+      height: 4000px;
+    }
+    .box {
+      width: 100px;
+      height: 100px;
+    }
+
+    .container {
+      position: relative;
+      width: 500px;
+      height: 500px;
+      background: darkgrey;
+      margin-top: 10px;
+    }
+    /* Виды позиционирования Static, Relative, Absolute, Fixed, Sticky*/
+
+    /*Static
+    Фича- НЕ изменяется при исп top, bottom,left,right
+     */
+
+    #box-1 {
+      position: static;
+      background: red;
+    }
+
+    /*Relative
+    Фича- изменяется при исп top, bottom,left,right
+     */    
+    #box-2 {
+      position: relative;
+      top: 50px;
+      left: 50px;
+      background: yellow;
+      z-index: 1; /* индекс для слоя, чем выше индекс тем приоритетнее слой, по дефолту 0, можно ставить и отрицательный*/
+    }
+    
+    /*Absolute 
+    Фича- изменяется касатально родительского элемента например див контейнера
+     */    
+    #box-3 {
+      position: absolute;
+      background: green;
+      top: 10px;
+      left: 10px;
+    }
+    #box-4 {
+      position: absolute;
+      background: crimson;
+      bottom: 10px;
+      right: 10px;  
+    }
+
+    /*Fixed 
+    Фича- фиксируется на экране в позиции которой была размечена изначально и при скроле позиция не меняется, например для того чтобы наш рекламный банер двигалась вместе со скролом и была всегда виден в одном месте
+     */    
+    #box-5 {
+      position: fixed;
+      background: blue;
+    }
+    /* Sticky
+    Фича- фиксируется на экране и при скроле позиция закрепляется на ту что указали (в ч.п top), например для того чтобы наше nav меню или top меню двигалось вместе со скролом и была всегда виден
+    */
+    #box-6 {
+      position: sticky;
+      top: 0;
+      background: slateblue;
+    }
+  
   </style>
 </head>
 <body>
- 
+  <div class="box" id="box-1"></div>
+  <div class="box" id="box-2"></div>
+  <div class="container">
+    <div class="box" id="box-3"></div>
+    <div class="box" id="box-4"></div>
+  </div>
+  <div class="box" id="box-5"></div>
+  <div class="box" id="box-6"></div>
 </body>
 </html>
